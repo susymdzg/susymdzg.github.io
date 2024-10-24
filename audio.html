@@ -1,0 +1,89 @@
+<!--
+Facultad de Arquitectura
+Colegio de diseño gráfico
+Diseño de Interfaz
+Creador por: Susana Méndez García
+-->
+<html>
+    <head>
+        <title>Audio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style type="text/css">
+            header,nav,main,footer{
+                width: 100%
+            }
+            main{
+                text-align: center;
+            }
+            section{
+                width: 40%;
+                height: 400px;
+                display: inline-block;
+                margin: 10px;
+                text-align: left;
+                overflow: auto;
+            }
+            audio,frame{
+                margin-top: 30px;
+                display: block;
+                margin: 30px auto;
+            } 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>AUDIO EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="mi_primera_web.html">Inicio</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listasconmenu.html">Listas</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formulario.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Audio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis eros metus. Etiam ex risus, hendrerit et faucibus vitae, euismod nec ex. Aenean hendrerit cursus nibh, ut vulputate ipsum facilisis sit amet. Vivamus rutrum, augue sed semper hendrerit, augue lacus rutrum purus, sed pellentesque quam mauris at elit. Donec pharetra eros at lorem venenatis, et sagittis est faucibus. Proin molestie ipsum in viverra maximus. Integer nisl sapien, bibendum id tristique vitae, semper vel ante. Cras blandit tortor et orci pretium, vel posuere metus suscipit</p>
+                <audio controls>
+                    <source src="audio/nightfall_future.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3.
+                </audio>
+            </section>
+            <section>
+                <h2>Audio con reproducción automática y muted</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis eros metus. Etiam ex risus, hendrerit et faucibus vitae, euismod nec ex. Aenean hendrerit cursus nibh, ut vulputate ipsum facilisis sit amet. Vivamus rutrum, augue sed semper hendrerit, augue lacus rutrum purus, sed pellentesque quam mauris at elit. Donec pharetra eros at lorem venenatis, et sagittis est faucibus. Proin molestie ipsum in viverra maximus. Integer nisl sapien, bibendum id tristique vitae, semper vel ante. Cras blandit tortor et orci pretium, vel posuere metus suscipit</p>
+                <audio controls muted autoplay>
+                    <source src="audio/Mirage%20melody.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3
+                </audio>
+            </section>
+            <section>
+                <h2>Audio con reproducción cíclica</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis eros metus. Etiam ex risus, hendrerit et faucibus vitae, euismod nec ex. Aenean hendrerit cursus nibh, ut vulputate ipsum facilisis sit amet. Vivamus rutrum, augue sed semper hendrerit, augue lacus rutrum purus, sed pellentesque quam mauris at elit. Donec pharetra eros at lorem venenatis, et sagittis est faucibus. Proin molestie ipsum in viverra maximus. Integer nisl sapien, bibendum id tristique vitae, semper vel ante. Cras blandit tortor et orci pretium, vel posuere metus suscipit</p>
+                <audio controls loop>
+                    <source src="audio/Veil_of_mysteries.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3
+                </audio>
+            </section>
+            <section>
+                <h2>Podcast</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis eros metus. Etiam ex risus, hendrerit et faucibus vitae, euismod nec ex. Aenean hendrerit cursus nibh, ut vulputate ipsum facilisis sit amet.</p>
+                <iframe frameborder='0' allowfullscreen='' scrolling='no' height='200'  style='width:100%;' src='https://www.ivoox.com/player_ej_134106433_6_1.html?c1=872f89' loading='lazy'></iframe>
+            </section>
+            <section>
+                <h2>Audio de Spotify</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis eros metus. Etiam ex risus, hendrerit et faucibus vitae, euismod nec ex. Aenean hendrerit cursus nibh, ut vulputate ipsum facilisis sit amet.</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1vhNGBTFoaSTLbHjPGFIlF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por: Susana Méndez García</h5>
+        </footer>
+    </body>
+</html>
