@@ -1,0 +1,92 @@
+<!--
+Facultad de Arquitectura
+Colegio de diseño gráfico
+Diseño de Interfaz
+Creador por: Susana Méndez García
+-->
+<html>
+    <head>
+        <title>Audio</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <style type="text/css">
+            header,nav,main,footer{
+                width: 100%
+            }
+            main{
+                text-align: center;
+            }
+            section{
+                width: 40%;
+                height: 400px;
+                display: inline-block;
+                margin: 10px;
+                text-align: left;
+                overflow: auto;
+            }
+            audio,frame{
+                margin-top: 30px;
+                display: block;
+                margin: 30px auto;
+            } 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>AUDIO EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html.html" lab index="1">Inicio</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listasconmenu.html">Listas</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formulario.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Audio</h2>
+                <p>El crepúsculo se deslizaba entre las ruinas, cuando ella llegó. Las sombras, antes inmóviles, comenzaron a moverse a su paso. En sus manos llevaba un objeto que parecía fuera de lugar, algo que no pertenecía ni al presente ni al pasado.</p>
+                <p>El tiempo pareció detenerse cuando lo activó. El viento cesó, el mundo contuvo la respiración. Un susurro quedó en el aire, y en ese instante fugaz, el futuro cambió para siempre.</p>
+                <audio controls>
+                    <source src="../medios/audio/nightfall_future.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3.
+                </audio>
+            </section>
+            <section>
+                <h2>Audio con reproducción automática y muted</h2>
+                <p>La brisa traía consigo una melodía lejana, casi irreal. Ella avanzaba lentamente, como si cada paso la acercara más a un espejismo que bailaba entre las dunas.</p>
+                <p>El aire vibraba con notas invisibles, envolviéndola en una calma inquietante. Al llegar al centro de aquel eco musical, la imagen se desvaneció, y con ella, todo lo que había creído real. Solo quedó el silencio, y una melodía que aún resonaba en su mente, como un recuerdo perdido en la arena.</p>
+                <audio controls muted autoplay>
+                    <source src="../medios/audio/Mirage%20melody.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3
+                </audio>
+            </section>
+            <section>
+                <h2>Audio con reproducción cíclica</h2>
+                <p>Bajo el manto de la noche, un velo de misterio cubría el bosque. Ella avanzó entre las sombras, atraída por un susurro lejano.</p>
+                <p>Una luz tenue brillaba entre los árboles, revelando un círculo de piedras. En su centro, un libro de tapas desgastadas resplandecía. Al abrirlo, las páginas se movieron solas, desvelando historias de almas perdidas y secretos olvidados. En ese instante, supo que había encontrado una verdad oculta, aunque el costo de descubrirla aún era incierto.</p>
+                <audio controls loop>
+                    <source src="../medios/audio/Veil_of_mysteries.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio mp3
+                </audio>
+            </section>
+            <section>
+                <h2>Podcast</h2>
+                <p>Si te gustan las historias que te mantienen al borde del asiento y te hacen mirar dos veces antes de apagar la luz, te recomiendo "Relatos de la Noche", un podcast que reúne relatos de terror escalofriantes basados en experiencias reales y leyendas urbanas. Perfecto para los amantes del suspenso y lo sobrenatural, es ideal para acompañarte en esas noches en que el miedo parece más cercano de lo habitual.</p>
+                <iframe frameborder='0' allowfullscreen='' scrolling='no' height='200'  style='width:100%;' src='https://www.ivoox.com/player_ej_134106433_6_1.html?c1=872f89' loading='lazy'></iframe>
+            </section>
+            <section>
+                <h2>Audio de Spotify</h2>
+                <p>Si buscas un álbum que combine poderosas emociones, letras profundas y una mezcla impecable de géneros, te recomiendo “Wings” de BTS. Este álbum lleva al oyente a un viaje introspectivo, explorando temas como el crecimiento personal, la tentación, y la lucha interna. Cada canción tiene un sonido único, desde la intensidad de "Blood, Sweat & Tears" hasta las baladas emotivas como "Awake" y "First Love".</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1vhNGBTFoaSTLbHjPGFIlF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por: Susana Méndez García</h5>
+        </footer>
+    </body>
+</html>

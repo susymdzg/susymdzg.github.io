@@ -1,0 +1,128 @@
+<!--
+Facultad de Arquitectura
+Colegio de diseño gráfico
+Diseño de Interfaz
+Creador por: Susana Méndez García
+-->
+<html>
+    <head>
+        <title>FORMULARIOS EN HTML</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>FORMULARIOS EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html.html" lab index="1">Inicio</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listasconmenu.html">Listas</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formulario.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Formulario de ingreso</h2>
+                <p>Los formularios de registro son cruciales para establecer una conexión efectiva con los usuarios, ya que facilitan la creación de cuentas personalizadas. Al requerir solo la información esencial, permiten un acceso rápido y sencillo a los servicios, mientras que el diseño intuitivo mejora la experiencia del usuario, fomentando su participación y lealtad.</p>
+                <div class="form">
+                <a>
+                <form id="form" name="form" method="get">
+                <label for="usuario">USUARIO:</label>
+                    <input name="usuario" type="text" id="usuario" maxlength="30">
+                <label for="password">CONTRASEÑA:</label>
+                    <input name="password" type="password" id="password" maxlength="6">
+                    <input type="submit" name="submit" id="submit" value="Enviar">
+                    </form></a></div>
+            </section>
+            <section>
+                <h2>Formulario</h2>
+                <p>Los formularios normales son herramientas esenciales para recopilar información valiosa de los usuarios, ya sea para encuestas, comentarios o consultas. Un diseño claro y accesible no solo optimiza la recolección de datos, sino que también contribuye a la satisfacción del usuario, haciendo que el proceso de interacción sea fluido y agradable.</p>
+                <div class="form">
+                    <a>
+                <form id="form" name="form" method="get">
+                <label for="nombre">NOMBRE:</label>
+                    <input name="nombre" type="text" id="nombre" maxlength="30">
+                <form id="form" name="form" method="get">
+                <label for="apellidos">APELLIDOS:</label>
+                    <input name="apellidos" type="text" id="apellidos" maxlength="30">
+                    <label for="number">EDAD:</label>
+                    <input name="number" type="number" id="number" min="18" max="100">
+                    <label for="pais">PAÍS:</label>
+                    <select name="pais" id="pais">
+                      <option value="mexico">México</option>
+                      <option value="argentina">Argentina</option>
+                      <option value="venezuela">Venezuela</option>
+                      <option value="colombia">Colombia</option>
+                    </select>
+                    <label for="genero">GÉNERO:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">HOMBRE</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">MUJER</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">OTRO</label>
+                    </div>
+                    <label for="musica">TIPO DE MÚSICA:</label>
+                    <ul class="music-options">
+                        <li>
+                            <input type="checkbox" id="musica1" name="musica1" value="rock">
+                            <label for="musica1">ROCK</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="musica2" name="musica2" value="pop">
+                            <label for="musica2">POP</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="musica3" name="musica3" value="regue">
+                            <label for="musica3">REGUE</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="musica4" name="musica4" value="cumbia">
+                            <label for="musica4">CUMBIA</label>
+                        </li>
+                    </ul>
+                    <input type="submit" name="submit" id="submit" value="Enviar">
+                    </form></form></a></div>
+            </section>
+            <section>
+                <h2>Formulario de personalización</h2>
+                <p>Los formularios de personalización, que incluyen opciones como la fecha de cumpleaños, el día de registro, la hora de acceso y la posibilidad de dejar comentarios y adjuntar identificación, son esenciales para ofrecer una experiencia más enriquecedora y personalizada a los usuarios. Al permitir que los usuarios compartan información relevante, no solo facilitas una mejor interacción, sino que también puedes enviarles notificaciones personalizadas y contenido específico que se alinee con sus preferencias. Esta personalización no solo aumenta la satisfacción del usuario, sino que también fortalece la conexión con la plataforma, haciendo que cada visita se sienta más significativa y adaptada a sus necesidades.</p>
+                <div class="form">
+                <a>
+                <form id="form" name="form" method="get">
+                <label for="date">CUMPLEAÑOS:</label>
+                <input type="date" name="date" id="date" value="cumpleanos">
+                <label for="datetime">DÍA DE REGISTRO Y HORA(HOY)</label>
+                <input type="datetime-local" name="datetime" id="datetime" value="registro">
+                <label for="textarea">COMENTARIOS:</label>
+                <textarea cols="50" rows="20"></textarea>
+                <label for="recomendation">¿RECOMENDARÍAS ESTE SITIO A ALGUIEN MÁS?</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="gender" value="recomendation">
+                    <label for="yes">SÍ</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="no" name="recomendation" value="no">
+                    <label for="no">NO</label>
+                </div>
+                <label for="file">SUBE UN DOCUMENTO DE IDENTIFICACIÓN:</label>
+                <input type="file" id="file" name="file" name="documento">
+                <input type="submit" name="submit" id="submit" value="Enviar">
+                </form></a></div>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por: Susana Méndez García</h5>
+        </footer>
+    </body>
+</html>
